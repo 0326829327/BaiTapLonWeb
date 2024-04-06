@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán nhạc cụ </title>
+   
+    <link rel="stylesheet" href="../css/style/style.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/style/dangKyDangNhap.css">
+  
+  <script src="../js/jsweb/main.js"></script>
+
+</head>
+<body>
+    <header>
+        <a class=""  style="float: left; margin-right: 80px;" href="../html/index.html" class=""><img src="../images/music shop logo.png" alt="" width="90px"></a>
+          <div style="margin-right: 20px; margin-top: 20px; float: right;" class="icons">
+                <i data-bs-toggle="collapse" data-bs-target="#mynavbar" class="fas fa-bars tad" ></i>
+                <i class="fa-solid fa-user"  id="users"  data-bs-toggle="modal" data-bs-target="#dangNhap"></i>
+              
+                
+                
+                <div class="modal fade" id="dangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Vui lòng đăng nhập tài khoản MusicShop để xem ưu đãi và thanh toán dễ dàng hơn.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/dangki.html"> <button class="btnDangKy" type="submit"> Đăng ký </button></a>
+                                    <a href="../html/dangnhap.html"><button class="btnDangNhap" type="submit">Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="daDangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Chào mừng <script> getTenDangNhap()</script> đến với MusicShop</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/nguoidung.html"> <button type="submit" class="btnDangKy">Thong Tin</button></a>
+                                    <a href=""  onclick="dangXuat()"><button type="submit" class="btnDangNhap">Đăng Xuat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+
+            </div>
+        <div class="navbar-expand-lg ">
+           
+                <div style="padding-top: 12px;" class="collapse navbar-collapse " id="mynavbar">
+                    <nav style="float: left;"  class="navbar-nav ">
+                        <a  href="../html/index.html">Trang chủ</a>
+                        <a href="../html/gioithieu.html">Giới Thiệu</a>
+                        <a href="../html/lienhe.html">Liên hệ</a>
+                        <a class="active" href="../html/tintuc.html">Tin tức</a>
+                        <a style="margin-right: 100px;"  href="../html/chinhsach.html">Chính sách</a>
+                        <span style="margin-top: 7px;" class="group">
+                            <input type="search" placeholder="Tìm kiếm">
+                            <i class="fas fa-search" id="search-icon"></i>
+                        </span>
+                    </nav>
+            </div>
+        </div>
+    </header> 
+    <div id="tintuc">
+        <div class="row" style="margin: auto; padding: 5% 0px;">
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/tre.webp" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://baonghean.vn/sau-loi-ich-neu-tre-duoc-hoc-choi-nhac-cu-post175884.html">Sáu lợi ích nếu trẻ được học chơi nhạc cụ</a>
+                        <p>Học chơi một loại nhạc cụ có thể giúp trẻ cải thiện kết quả học tập, nâng cao kỹ năng xã hội và hiểu biết nhiều nền văn hóa.</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/images1727923_1.jpg.webp" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://baonghean.vn/hoc-nhac-cang-som-cang-thong-minh-post118822.html">Học nhạc càng sớm càng thông minh</a>
+                        <p>Học chơi một nhạc cụ có thể đem đến những hiệu quả tích cực không ngờ cho sự phát triển trí óc ở cả trẻ em và người lớn.</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/4-cac-thi-sinh-chup-hinh-luu-niem-btc-5read-only-1557713958424333376518-15577312396281094602593.webp" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://tuoitre.vn/finger-style-guitar-talent-danh-thuc-giai-dieu-dam-me-20190513092052373.htm">Finger style guitar talent - Đánh thức giai điệu đam mê</a>
+                        <p>TTO - 'Finger style guitar talent - Đánh thức giai điệu đam mê 2019' là cuộc thi diễn ra trong hơn một tháng, dành cho bạn trẻ từ 10-28 tuổi đam mê độc tấu guitar</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/FLvMP3WD.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href=" Những tiếng đàn day dứt từ đôi tay người nghệ sĩ guitar Nguyễn Lê Tuyên trong đêm mở màn Giấc mơ cao nguyên tại TP.HCM đã làm nhiều người... nổi da gà! Nhưng đó chỉ là một trong nhiều điều đáng nói tại buổi trình diễn này...">Ba người và một giấc mơ</a>
+                        <p> Những tiếng đàn day dứt từ đôi tay người nghệ sĩ guitar Nguyễn Lê Tuyên trong đêm mở màn Giấc mơ cao nguyên tại TP.HCM đã làm nhiều người... nổi da gà! Nhưng đó chỉ là một trong nhiều điều đáng nói tại buổi trình diễn này....</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/Dan2000nam-1676946331-7018-1676946790.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://vnexpress.net/phat-hien-manh-sung-huou-co-the-la-nhac-cu-viet-2-000-nam-4572980.html">Phát hiện mảnh sừng hươu có thể là nhạc cụ Việt 2.000 năm </a>
+                        <p>Mảnh sừng dài 35 cm nhiều khả năng thuộc về hươu Sambar hoặc hươu vàng, được phát hiện dọc theo sông Mekong.</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/loi-khuyen-ve-cach-danh-dan-guitar-dung-ky-thuat-co-the-ban-chua-biet-204694.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://toplist.vn/top-list/cach-hoc-dan-guitar-co-ban-co-the-ban-chua-biet-20146.htm">Top 8 Cách học đàn guitar cơ bản có thể bạn chưa biết</a>
+                        <p>Đàn guitar acoustic là một người bạn tuyệt vời bên cạnh để giải trí và thỏa mãn đam mê âm nhạc, chính vì vậy đang có rất nhiều bạn tự học đàn guitar tại nhà, ....</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/nhac-ly-dan-piano-co-ban.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://kawai.vn/huong-dan-hoc-dan-piano-co-ban-o-nha-chi-tiet-nhat/">Hướng dẫn học đàn piano cơ bản ở nhà chi tiết nhất</a>
+                        <p>Bạn đang muốn tự bản thân tìm hiểu, tự học đàn piano ở nhà?</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-12 col-sm-12 col-md-4" style="margin-top: 30px;" >
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 " >
+                        <img src="../images/tintuc/xem-anh2-5668.webp" width="100%" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <a href="https://thanhnien.vn/xem-anh-nguoi-tram-nam-truoc-choi-nhac-1851454574.htm">Xem ảnh người trăm năm trước chơi nhạc</a>
+                        <p>Ca trù từng ra sao, diễn viên tuồng đã hóa trang thế nào, cồng chiêng xưa vang lên trong không gian và bối cảnh gì. Những điều đó có trong bộ ảnh cổ Nhạc công và âm nhạc cổ truyền Việt Nam. </p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <footer  class="text-light text-center p-1" >
+            <p> <a href="../html/index.html" class="text-warning">MUSIC SHOP</a> - All rights reserved © 2021 - Designed by <a href="https://www.linkedin.com/in/quang-tr%E1%BA%A7n-85a4382bb/" class="text-info">us</a></p>
+    </footer> 
+</div>
+    
+</body>
+</html>

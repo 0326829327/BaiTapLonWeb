@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán nhạc cụ </title>
+   
+    <link rel="stylesheet" href="../css/style/style.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/style/dangKyDangNhap.css">
+
+  <script src="../js/jsweb/main.js"></script>
+</head>
+<body>
+    <header>
+        <a class=""  style="float: left; margin-right: 80px;" href="../html/index.html" class=""><img src="../images/music shop logo.png" alt="" width="90px"></a>
+          <div style="margin-right: 20px; margin-top: 20px; float: right;" class="icons">
+                <i data-bs-toggle="collapse" data-bs-target="#mynavbar" class="fas fa-bars tad" ></i>
+                <i class="fa-solid fa-user"  id="users"  data-bs-toggle="modal" data-bs-target="#dangNhap"></i>
+              
+                
+               
+                <div class="modal fade" id="dangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Vui lòng đăng nhập tài khoản MusicShop để xem ưu đãi và thanh toán dễ dàng hơn.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/dangki.html"> <button class="btnDangKy" type="submit"> Đăng ký </button></a>
+                                    <a href="../html/dangnhap.html"><button class="btnDangNhap" type="submit">Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="daDangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Chào mừng <script> getTenDangNhap()</script> đến với MusicShop.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/nguoidung.html"> <button type="submit" class="btnDangKy">Thong Tin</button></a>
+                                    <a href=""  onclick="dangXuat()"><button type="submit" class="btnDangNhap">Đăng Xuat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+
+            </div>
+        <div class="navbar-expand-lg ">
+           
+                <div style="padding-top: 12px;" class="collapse navbar-collapse " id="mynavbar">
+                    <nav style="float: left;"  class="navbar-nav ">
+                        <a class="active" href="../html/index.html">Trang chủ</a>
+                        <a href="../html/gioithieu.html">Giới Thiệu</a>
+                        <a href="../html/lienhe.html">Liên hệ</a>
+                        <a href="../html/tintuc.html">Tin tức</a>
+                        <a style="margin-right: 100px;"  href="../html/chinhsach.html">Chính sách</a>
+                        <span style="margin-top: 7px;" class="group">
+                            <input type="search" placeholder="Tìm kiếm">
+                            <i class="fas fa-search" id="search-icon"></i>
+                        </span>
+                    </nav>
+            </div>
+        </div>
+    </header>  
+    <div >
+        <div class="row">
+            <div class="col-1 col-sm-3"></div>
+            <div class="col-10 col-sm-6 khungDKDN" style="padding: 20px 50px;  background-color: silver; margin-top: 50px; border-radius: 30px;">
+                <a href="#" style="float: left;" >
+                    <img src="../images/muiten.png" alt="" width="30">
+                </a>
+                <br>
+                <p class="title" style="margin-bottom: 50px;">Đăng Ký Tài Khoản MusicShop</p>
+                <form class="m-3" >
+                    <div class="form-group" autocapitalize="none">
+                        <div class="box-input">
+                            <input type="text" placeholder="Nhập họ và tên" id="hoTen" maxlength="255" required="required" class="input_main">
+                            <label for="hovaten" class="input_label">HỌ VÀ TÊN (*)</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                        <small style="text-align:left; color: gray;font-size: 13px;position: relative;bottom: 20px;"><p><i>Chữ cái bắt đầu là chữ In hoa</i></p></small>
+                        <div class="box-input">
+                            <input type="text" placeholder="Nhập số điện thoại" id="sdt" maxlength="255" required="required"  class="input_main">
+                            <label for="sdt" class="input_label">SỐ ĐIỆN THOẠI (*)</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                        <small style="text-align:left; color: gray;font-size: 13px;position: relative;bottom: 20px;"><p><i>Số điện thoại bắt đầu bằng +84 hoặc 0, có 10 số </i></p></small>
+                        <div class="box-input">
+                            <input type="text" placeholder="Nhập email" id="email" maxlength="255" required="required"  class="input_main">
+                            <label for="email" class="input_label">EMAIL (*)</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                        <small style="text-align:left;color: gray;font-size: 13px;position: relative;bottom: 20px;"><p><i>Hóa đơn VAT khi mua hàng sẽ được gửi qua email này</i></p></small>
+                        <div class="box-input">
+                            <input type="password" placeholder="Nhập mật khẩu" id="pass" maxlength="255" required="required" autocomplete="off" class="input_main">
+                            <label for="pass" class="input_label">MẬT KHẨU (*)</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                        <small style="text-align:left; color: gray;font-size: 13px;position: relative;bottom: 20px;"><p><i>(*) Mật khẩu tối thiểu 8 ký tự, có ít nhất 1 chữ và 1 số 1 kí tự đặc biệt. (VD: abc2004@)</i></p></small>
+                        <div class="box-input">
+                            <input type="password" placeholder="Nhập lại mật khẩu" id="passXN" maxlength="255" required="required" autocomplete="off" class="input_main">
+                            <label for="passXN" class="input_label">XÁC NHẬN MẬT KHẨU (*)</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                        <div class="box-input">
+                            <input type="text" placeholder="Nhập mã giới thiệu (nếu có)" id="maGT" maxlength="255" required="required" autocomplete="off" class="input_main">
+                            <label for="maGT" class="input_label">MÃ GIỚI THIỆU</label>
+                            <div class="box-input_inline"></div>
+                        </div>
+                       <div class="row ">
+                            <div class="col-12 col-sm-12" style="font-size: 8px;" class="form-group ">
+                                    <div >
+                                        <input  style="margin-top: -15px;" type="checkbox" id="check" name="check" value="check" required="required" >
+                                        <label for="check" style="font-size: 13px;">Đăng ký nhận bản tin khuyến mãi từ MusicShop</label>
+                                    </div>
+
+                                    <div >
+                                        <input style="margin-top: -15px;"  type="checkbox" id="check" name="check" value="check" required="required">
+                                        <label for="check" style="font-size: 13px;">Tôi đồng ý với các <a href="#" style="color: #d70018;">điều khoản và chính sách</a> của MusicShop</label>
+                                        
+                                        <div class="error-msg" > Bạn cần đồng ý với các điều khoản và chính sách của MusicShop.</div>
+                                    </div>
+                                   
+                            </div>
+                       </div>
+                        <div class="mt-5" >
+                            <button onclick="registerAccount();" class="btn col-12" style="background-color:rgb(147, 115, 83); color: white; font-weight: bold;" type="button">Đăng ký</button>
+                        </div>
+                    </div>
+                    <div class="login-question mt-4 row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-12 col-sm-4">
+                            <p class="question_text">Bạn đã có tài khoản?</p>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <a style="margin-top: -10px; color:rgb(217, 17, 51)" href="../html/dangnhap.html" class="nav-link resgiter">Đăng nhập ngay</a>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-1 col-sm-3"></div>
+            
+        </div>
+       
+    </div>
+</body>
+</html>

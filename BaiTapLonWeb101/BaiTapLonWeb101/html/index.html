@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán nhạc cụ </title>
+   
+    <link rel="stylesheet" href="../css/style/style.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/jsweb/main.js"></script>
+   
+</head>
+<body>
+   <div class="" >
+
+    <header>
+        <a class=""  style="float: left; margin-right: 80px;" href="../html/index.html" class=""><img src="../images/music shop logo.png" alt="" width="90px"></a>
+          <div style="margin-right: 20px; margin-top: 20px; float: right;" class="icons">
+                <i data-bs-toggle="collapse" data-bs-target="#mynavbar" class="fas fa-bars tad" ></i>
+                <i class="fa-solid fa-user"  id="users"  data-bs-toggle="modal" data-bs-target="#dangNhap"></i>
+                
+                <div class="modal fade" id="dangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Vui lòng đăng nhập tài khoản MusicShop để xem ưu đãi và thanh toán dễ dàng hơn.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/dangki.html"> <button class="btnDangKy" type="submit"> Đăng ký </button></a>
+                                    <a href="../html/dangnhap.html"><button class="btnDangNhap" type="submit">Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="daDangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Chào mừng <script> getTenDangNhap()</script> đến với MusicShop</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/nguoidung.html"> <button type="submit" class="btnDangKy">Thong Tin</button></a>
+                                    <a href=""  onclick="dangXuat()"><button type="submit" class="btnDangNhap">Đăng Xuat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+
+            </div>
+        <div class="navbar-expand-lg ">
+           
+                <div style="padding-top: 12px;" class="collapse navbar-collapse " id="mynavbar">
+                    <nav style="float: left;"  class="navbar-nav ">
+                        <a class="active" href="../html/index.html">Trang chủ</a>
+                        <a href="../html/gioithieu.html">Giới Thiệu</a>
+                        <a href="../html/lienhe.html">Liên hệ</a>
+                        <a href="../html/tintuc.html">Tin tức</a>
+                        <a style="margin-right: 100px;"  href="../html/chinhsach.html">Chính sách</a>
+                        <span style="margin-top: 7px;" class="group">
+                            <input type="search" placeholder="Tìm kiếm">
+                            <i class="fas fa-search" id="search-icon"></i>
+                        </span>
+                    </nav>
+            </div>
+        </div>
+    </header> 
+        <div class="khung " style="overflow-x: auto; text-align: center;">
+            <div class="row flex-nowrap" style="margin-top: -5px;">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Hot Sales
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Guitar
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Piano
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Organ
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Violin
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                       Ukulele
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Trống
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Khác
+                    </a>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+            
+        </div>
+         
+       
+        
+                
+        <div class="danhMucSP" style="margin-top: 5px;">
+            <div class="row">
+                <div class="col-12">
+                    <img src="../images/Top-10-mẫu-đàn-phù-hợp-cho-người-mới-chơi-1.jpg" alt="" width="100%">
+                </div>
+            </div>
+            <div class="product-list mt-5 container  " id="hot">
+                <div class="product-list mt-5 container  ">
+                    <div class="row news"><span class=" news__title"> <p class="text-animation"> HOT SALES <i class='fas fa-fire-alt' style='font-size:24px;color:orangered'></i></p></span> </div>
+                    <div class="product row">
+                        <div class="col-6 col-sm-4 my-2 col-md-3" style="border-top-left-radius: 100px;">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan_guitar_acosutic_lv220x500x500x4.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn guitar Acoustic MT-05
+                                        </a>
+                                    </h4>
+                                    <p class="price">$300.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-piano-kawai-bl31-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Piano kawai
+                                        </a>
+                                    </h4>
+                                    <p class="price">$600.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section  class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/piano-roland-gp-9m-06.jpg" alt="" class="zoom-img"/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Riano Roland
+                                        </a>
+                                    </h4>
+                                    <p class="price">$550.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-organ-roland-e-x30-1-400x400.jpg "alt=""/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Organ Roland e-x30-1
+                                        </a>
+                                    </h4>
+                                    <p class="price">$450.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                    <a class="xemTatCa" href="index.html?star=3&amp;sort=rateCount-decrease" style=" border-left: 2px solid #ff9c00;      border-right: 2px solid #ff9c00;">     Xem tất cả  </a>
+                </div>
+                <div class="product-list mt-5 container  " id="piano">
+                    <div class="row news"><span class=" news__title">Piano</span></div>
+                    <div class="product row">
+                        <div class="col-6 col-sm-4 my-2 col-md-3" style="border-top-left-radius: 100px;">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-piano-kawai-bl31-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Piano Kawai BL31
+                                        </a>
+                                    </h4>
+                                    <p class="price">$630.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-piano-kawai-gl30-mau-den.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Piano Kawai GL30
+                                        </a>
+                                    </h4>
+                                    <p class="price">$550.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section  class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/piano-essex-123E-mau-den.jpg" alt="" class="zoom-img"/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Piano Essex 123E
+                                        </a>
+                                    </h4>
+                                    <p class="price">$620.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/piano-roland-gp-9m-06.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Piano Roland GP
+                                        </a>
+                                    </h4>
+                                    <p class="price">$550.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                    <a class="xemTatCa" href="index.html?star=3&amp;sort=rateCount-decrease" style=" border-left: 2px solid #ff9c00;      border-right: 2px solid #ff9c00;">     Xem tất cả  </a>
+                </div>
+                <div class="product-list mt-5 container  " id="guitar">
+                    <div class="row news"><span class=" news__title">Guitar</span></div>
+                    <div class="product row">
+                        <div class="col-6 col-sm-4 my-2 col-md-3" style="border-top-left-radius: 100px;">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/takamine-gd20-ns-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn guitar Takamine
+                                        </a>
+                                    </h4>
+                                    <p class="price">$250.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/fender-limited-edition-redondo-player-all-mahogany-0970713522-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn guitar fender
+                                        </a>
+                                    </h4>
+                                    <p class="price">$300.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section  class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-guitar-dien-fender-player-strat-hsh-pf-seafg-0144533573-400x400.jpg" alt="" class="zoom-img"/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn guitar Điện Fender 
+                                        </a>
+                                    </h4>
+                                    <p class="price">$270.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan_guitar_acosutic_lv220x500x500x4.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn guitar Acoustic MT-05
+                                        </a>
+                                    </h4>
+                                    <p class="price">$300.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                    <a class="xemTatCa" href="index.html?star=3&amp;sort=rateCount-decrease" style=" border-left: 2px solid #ff9c00;      border-right: 2px solid #ff9c00;">     Xem tất cả  </a>
+                    <div style="height: 50px;"></div>
+                </div>
+                <div class="product-list mt-5 container  " id="organ">
+                    <div class="row news"><span class=" news__title">Organ</span></div>
+                    <div class="product row">
+                        <div class="col-6 col-sm-4 my-2 col-md-3" style="border-top-left-radius: 100px;">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/ctx5000-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn Organ Casio CT-X5000
+                                        </a>
+                                    </h4>
+                                    <p class="price">$350.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/roland-fantom-6-1-400x400.gif" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn  organ roland-fantom-6
+                                        </a>
+                                    </h4>
+                                    <p class="price">$380.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section  class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/Roland-JD-XI-1-400x400.jpg" alt="" class="zoom-img"/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn organ Roland-JD-XI
+                                        </a>
+                                    </h4>
+                                    <p class="price">$420.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/dan-organ-roland-xps10-400x400.jpg" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Đàn organ roland-xps10
+                                        </a>
+                                    </h4>
+                                    <p class="price">$300.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                    <a class="xemTatCa" href="index.html?star=3&amp;sort=rateCount-decrease" style=" border-left: 2px solid #ff9c00;      border-right: 2px solid #ff9c00;">     Xem tất cả  </a>
+                    <div style="height: 50px;"></div>
+                </div>
+                <div class="product-list mt-5 container  " id="ddj">
+                    <div class="row news"><span class=" news__title" >DDJ</span></div>
+                    <div class="product row">
+                        <div class="col-6 col-sm-4 my-2 col-md-3" style="border-top-left-radius: 100px;">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/L98225000000001-00-600x600.webp" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Pioneer DJ DDJ-FLX4 2
+                                        </a>
+                                    </h4>
+                                    <p class="price">$299.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/M00278000000001-00-600x600.webp" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Pioneer DJ DDJ-FLX10
+                                        </a>
+                                    </h4>
+                                    <p class="price">$530.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section  class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/L98224000000001-00-600x600.webp" alt="" class="zoom-img"/>
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Pioneer DJ DDJ-FLX6-GT
+                                        </a>
+                                    </h4>
+                                    <p class="price">$270.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-6 col-sm-4 my-2 col-md-3">
+                            <section class="image-container" style="background-color:  silver; padding: 5px;">
+                                <div class="pro-img-box ">
+                                    <img src="../images/L55321000000000-00-600x600.webp" alt="" />
+                                    <a href="#" class="adtocart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-left ">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            Pioneer DJ DDJ-800
+                                        </a>
+                                    </h4>
+                                    <p class="price">$300.00</p>
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                    <a class="xemTatCa" href="index.html?star=3&amp;sort=rateCount-decrease" style=" border-left: 2px solid #ff9c00;      border-right: 2px solid #ff9c00;">     Xem tất cả  </a>
+                    <div style="height: 50px;"></div>
+                </div>
+
+            </div>
+            
+                    
+                    
+        </div>
+        
+       
+	   
+		
+
+   </div>
+   <footer>
+    <div class="row" style="padding: 30px 50px;">
+        <div class="col-12 col-sm-3" style="margin-top:20px;">
+            <h6 class="footer-title">
+                Thông tin và chính sách
+            </h6>
+            <ul class="footer-menu " id="menu-list">
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="../html/chinhsach.html">Chính sách bảo hành</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="../html/chinhsach.html">Chính sách đổi trả</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="../html/chinhsach.html">Mua hàng trả góp Online</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="../html/chinhsach.html">Mua hàng trả góp bằng thẻ tín dụng</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="../html/chinhsach.html">Giao hàng &amp; Thanh toán</a></li>
+                <li class="footer-list-link" id="xem-them"><a class="footer-text-link" href="../html/chinhsach.html">Xem thêm<span class='rotate-up'>▼</span></a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-3" style="margin-top: 20px;">
+            <h6 class="footer-title">
+                Dịch vụ và thông tin khác
+            </h6>
+            <ul class="footer-menu">
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="">Liên hệ hợp tác kinh doanh</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="">Gửi góp ý, khiếu nại</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="">Dịch vụ bảo hành điện thoại</a></li>
+                <li class="footer-list-link"><a class="footer-text-link" target="_blank" href="">Dịch vụ bảo hành mở rộng</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-4" style="margin-top: 20px;">
+            <h6 class="footer-title">
+                Tổng đài hỗ trợ miễn phí
+            </h6>
+            <ul class="footer-menu">
+                <li class="footer-list-contact"><p class="footer-text-call">Gọi mua hàng:</p><a class="footer-text-contact" target="_blank" href="tel:+84326829327" >&nbsp; 0326829327</a></li>
+                <li class="footer-list-contact"><p class="footer-text-call">Gọi Khiếu nại:</p><a class="footer-text-contact" target="_blank" href="tel:+84326829327" >&nbsp;  0326829327</a></li>    
+                <li class="footer-list-contact"><p class="footer-text-call">Gọi bảo hành:</p><a class="footer-text-contact" target="_blank" href="mailto: trancongtinh2004@gmail.com">&nbsp;  trancongtinh2004@gmail.com</a></li>   
+            </ul>
+        </div>
+        <div class="col-12 col-sm-2" style="margin-top: 20px;">
+                <h6 class="footer-title">
+                    Kết nối với MusicShop
+                </h6>
+                
+                <h6 class="footer-title">
+                    Website thành viên
+                </h6>
+                
+                <h6 class="footer-title">
+                    Phương thức thanh toán
+                </h6>
+                
+            
+        </div>
+    </div>
+ <div class="footer-bot" style="background-color: silver">
+    <p>© Bản quyền 2024 - Lớp đại học kỹ thuật phần mềm 18A (Đại học Công Nghiệp Thành phố Hồ Chí Minh) <br>
+    <span><em style="font-size:10px; font-weight:normal">Mọi hành động sử dụng nội dung đăng tải trên Website MusicShop.com phải có sự đồng ý bằng văn bản của nhóm </em></span>
+    </p>
+</div>
+</footer>
+</div>
+  
+</body>
+</html>

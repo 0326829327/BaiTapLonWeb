@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán nhạc cụ </title>
+   
+    <link rel="stylesheet" href="../css/style/style.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+ <link rel="stylesheet" href="../css/style/gioithieu.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/trangchu.js"></script>
+  <script src="../js/jsweb/dangnhap.js"></script>
+</head>
+<body>
+   <div class="" >
+
+        <header>
+            <a class=""  style="float: left; margin-right: 80px;" href="../html/index.html" class=""><img src="../images/music shop logo.png" alt="" width="90px"></a>
+              <div style="margin-right: 20px; margin-top: 20px; float: right;" class="icons">
+          
+                    <i data-bs-toggle="collapse" data-bs-target="#mynavbar" class="fas fa-bars " ></i>
+                    <i class="fa-solid fa-user" data-bs-toggle="modal" data-bs-target="#dangNhap"  ></i>
+                    
+                <div class="modal fade" id="dangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Vui lòng đăng nhập tài khoản MusicShop để xem ưu đãi và thanh toán dễ dàng hơn.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/dangki.html"> <button class="btnDangKy" type="submit"> Đăng ký </button></a>
+                                    <a href="../html/dangnhap.html"><button class="btnDangNhap" type="submit">Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="daDangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Chào mừng <script> getTenDangNhap()</script> đến với MusicShop</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/nguoidung.html"> <button type="submit" class="btnDangKy">Thong Tin</button></a>
+                                    <a href=""  onclick="dangXuat()"><button type="submit" class="btnDangNhap">Đăng Xuat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+
+                </div>
+
+            <div class="navbar-expand-lg ">                  
+                        <div id="menu">
+                            <ul style="padding-top: 12px;" class="collapse navbar-collapse " id="mynavbar">
+                                <nav style="float: left;"  class="navbar-nav navhide">
+                                    <a href="../html/index.html">Trang chủ</a>
+                                    <a  href="../html/gioithieu.html" class="active">Giới Thiệu</a>
+                                    <a href="../html/lienhe.html" >Liên hệ</a>
+                                    <a href="../html/tintuc.html">Tin tức</a>
+                                    <a style="margin-right: 100px;"  href="../html/chinhsach.html">Chính sách</a>
+                                    <span style="margin-top: 7px;" class="group">
+                                        <input type="search" placeholder="Tìm kiếm">
+                                        <i class="fas fa-search" id="search-icon"></i>
+                                    </span>
+                                </nav> 
+                            </ul>
+                            
+                          </div>
+                </div>
+              
+                
+        </div>
+        </header>
+        <div class="khung " style="overflow-x: auto; text-align: center;">
+            <div class="row flex-nowrap" style="margin-top: -5px; font-style: inherit;">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Hot Sales
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Guitar
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Piano
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Organ
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Violin
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                       Ukulele
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Trống
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Khác
+                    </a>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+            
+        </div>
+
+           
+        </div>
+        <div class="col-12 col-sm-1 col-md-2 ">
+
+            </div>
+        </div>
+        <div>
+            <div class="row" id="chinhsach">
+                <div class="col-1 col-sm-1 col-md-2"></div>
+                <div class="col-10 col-sm-10 col-md-8 " style="padding-top: 50px;padding-bottom: 20px; text-align: left;">
+                    
+                        <div id="para">
+                            <div style="background-color: sandybrown;" class="text-center text-light p-lg-1">
+                              <h4>Giới Thiệu</h4>  
+                            </div>
+                            <p>
+                                
+                                <h4> We Love Savings So Much, We Built a Store Around 'Em.</h4> 
+                                
+                                At Marshalls, we believe that life's better with savings. Nothing beats the feeling of finding brands you love for prices you can’t pass up. Which is why we offer the most coveted brand name, designer, and other in-demand labels for 20-50% less than department and specialty store prices. <br>
+                                
+                                Every time you shop, you save. That’s what we call a shopping win-win. <br>
+                                
+                                <br>
+    
+                                <h4>Never the same store twice.</h4> 
+                                Our ever-changing selection of finds creates an exciting shopping experience our customers can’t get enough of. We’re constantly stocking our stores with the latest must-haves, so whenever you visit us, you’re always shopping a different Marshalls. be
+                                <br>
+                                
+                                We don’t hold replenishment stock in our back rooms and even our store managers don’t know what’s coming until they open the delivery truck doors. Our best advice? If you see something you love, grab it! <br>
+                                <br>
+                                <h4>Off-price? On point.</h4>
+                                
+                                We’re what you call an off-price retailer. For us, true value means the perfect combination of brand, fashion, price, and quality. Unlike traditional retailers, we don't do promotions, sales, coupons, or other gimmicks. We offer in-demand finds at amazing prices every. single. day.
+                                
+                                Get the Latest (for Less). <br>
+                                
+                                We’re always on the hunt for the hottest brand name and designer fashions of the season for you—and your whole crew. From trendy tops and jackets to luxe footwear and accessories, to bold ties and sneakers for him, educational toys for little ones, or artisan décor for your home—we’ve got it all at prices you won’t believe.
+                                
+                                We Buy Smart (So You Can Shop Smart) <br>
+                                
+                                We seek out all kinds of vendors: big brands to boutique, coveted designers, as well as up-and-coming labels you need to know about. There’s also some merchandise we design or have manufactured for us in order to bring you the best quality fashion at an amazing price. <br>
+                                
+                                For example, we work with artisans to source beautiful, hand-crafted mirrors and wooden accent pieces from India, amazing cashmere and merino wool from Italy, and soaps that are produced in the United Kingdom, Portugal, and Australia. <br>
+                                
+                                Our team of buyers are both opportunistic and entrepreneurial, so when a designer overproduces, a manufacturer makes too much product, or other stores overbuy, we step in and negotiate the lowest possible price and pass the savings on to you. Most of our products are current season styles, some are past, others are timeless classics. But no matter the find, it’s always priced just right. <br>
+                                
+                                <br>
+                                <h4>Online shopping? Online scoring.</h4> 
+                                
+                                Just like your favorite store, new finds arrive on Marshalls.com all the time. Plus, it’s open 24-7, so you can shop a different selection of brand name fashion at amazing prices anytime, anywhere. Check back often to see what's new! <br>
+                                
+                                Wanna shop IRL? Find a store near you. <br>
+                                
+                                Can't wait? Shop online now. <br>
+                                <br>
+                                <h4>
+                                    Founder:
+                                </h4>
+                                Trần Ngọc Duy Quang <br>
+                                Trần Công Tính 
+                            </p>
+    
+                        </div>
+                        
+                    </div>
+               
+                <div class="col-12 col-sm-1 col-md-2 ">
+                    <div class="card box  flex-container">
+                        <div class="card-header">
+                            <img src="../images/gioithieu/posters-de-post-malone-amazon.jpg" alt="post Malone " srcset="post Malone" width="100%"  >
+                        </div>
+                        <div class="card-body">
+                        <h5> <b>Post Malone</b></h5>    
+                        <p>
+                        <i>
+                            "Because no matter how my life has changed, I keep on looking back on better days"
+                        </i>    
+                        </p>
+                        </div>
+                        <div class="card-header">
+                            <img src="../images/gioithieu/j6m2q5zz7wdx.png" alt="" srcset="" width="110%">
+                        </div>
+                          
+                        <div class="card-body">
+                            <h5> <b>A$AP Rocky</b></h5>  
+                            <p>
+                              <i>"God is letting me shine, because I've got a good heart."</i>  
+                              </p>
+                            </div>
+                           
+                      </div>
+                      
+                            <div class="card-header">
+                                <img src="../images/gioithieu/83ffa7873feaecc2e95d8000242786ed.jpg" alt="" srcset="" width="100%">
+                            </div>
+                            <div class="card-body">
+                            <h5> <b>The Weekend</b></h5>    
+                            <p>
+                                <i>
+                                "I said I didn't feel nothing baby, but I lied"
+        
+                                </i>
+                            </p>
+                            </div>
+                            <div class="card-header">
+                                <img src="../images/gioithieu/il_1588xN.2662939151_4hkv.jpg" alt="" srcset="" width="100%">
+                            </div>
+                              
+                            <div class="card-body">
+                                <h5> <b>Kendrick Lamar</b></h5>  
+                                <p>
+                                <i>
+                                    “Everybody gon’ respect the shooter but the one in front of the gun lives forever”
+                                </i>
+                                </p>
+                                
+                             </div>    
+                      </div>
+                </div>
+            </div>
+        </div>
+        <footer  class="text-light text-center p-1" >
+                  <p> <a href="../html/index.html" class="text-warning">MUSIC SHOP</a> - All rights reserved © 2021 - Designed by <a href="https://www.linkedin.com/in/quang-tr%E1%BA%A7n-85a4382bb/" class="text-info">us</a></p>
+        </footer> 
+        </div>
+          
+        </body>
+        </html>
+        

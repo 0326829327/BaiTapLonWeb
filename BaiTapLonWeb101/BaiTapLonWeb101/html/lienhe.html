@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website bán nhạc cụ </title>
+   
+    <link rel="stylesheet" href="../css/style/style.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">   
+ <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+ <link rel="stylesheet" href="../css/style/gioithieu.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/trangchu.js"></script>
+  <script src="../js/jsweb/dangnhap.js"></script>
+  <style>
+    #exit{
+        text-decoration: none;
+        color: tomato;
+    }
+    #exit:hover{
+        background-color: tomato;
+        color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+   <div class="" >
+
+        <header>
+            <a class=""  style="float: left; margin-right: 80px;" href="../html/index.html" class=""><img src="../images/music shop logo.png" alt="" width="90px"></a>
+              <div style="margin-right: 20px; margin-top: 20px; float: right;" class="icons">
+          
+                    <i data-bs-toggle="collapse" data-bs-target="#mynavbar" class="fas fa-bars " ></i>
+                    <i class="fa-solid fa-user" data-bs-toggle="modal" data-bs-target="#dangNhap"   ></i>
+                    
+                <div class="modal fade" id="dangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Vui lòng đăng nhập tài khoản MusicShop để xem ưu đãi và thanh toán dễ dàng hơn.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/dangki.html"> <button class="btnDangKy" type="submit"> Đăng ký </button></a>
+                                    <a href="../html/dangnhap.html"><button class="btnDangNhap" type="submit">Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="daDangNhap" tabindex="-1" aria-labelledby="ModalSmember" aria-hidden="true">
+                    <div class="modal-dialog login" >
+                        <div class="modal-content" >
+                            <div class="modal-body" style="text-align: center;">
+                                <button style="float: right;color: aliceblue; background-color:peru;;width: 30px; height: 30px; border-radius: 50%;" class="modal-close " type="button" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 style="text-align: center;font-size: 25px; color: peru;; font-weight: bold;margin-left: 20px; ">MusicShop</h4>
+                                <img src="../images/smember.png" alt="">
+                                <div class="text">
+                                    <p style="text-align: center; font-weight: 700; font-size: 15px;">Chào mừng <script> getTenDangNhap()</script> đến với MusicShop.</p>
+                                </div>
+                                <div class="group-login-btn">
+                                    <a href="../html/nguoidung.html"> <button type="submit" class="btnDangKy">Thong Tin</button></a>
+                                    <a href=""  onclick="dangXuat()"><button type="submit" class="btnDangNhap">Đăng Xuat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+
+                </div>
+
+            <div class="navbar-expand-lg ">                  
+                        <div id="menu">
+                            <ul style="padding-top: 12px;" class="collapse navbar-collapse " id="mynavbar">
+                                <nav style="float: left;"  class="navbar-nav navhide">
+                                    <a href="../html/index.html">Trang chủ</a>
+                                    <a  href="../html/gioithieu.html">Giới Thiệu</a>
+                                    <a href="../html/lienhe.html" class="active">Liên hệ</a>
+                                    <a href="../html/tintuc.html">Tin tức</a>
+                                    <a style="margin-right: 100px;"  href="../html/chinhsach.html">Chính sách</a>
+                                    <span style="margin-top: 7px;" class="group">
+                                        <input type="search" placeholder="Tìm kiếm">
+                                        <i class="fas fa-search" id="search-icon"></i>
+                                    </span>
+                                </nav> 
+                            </ul>
+                            
+                          </div>
+                </div>
+              
+                
+        </div>
+        </header>
+        <div class="khung " style="overflow-x: auto; text-align: center;">
+            <div class="row flex-nowrap" style="margin-top: -5px; font-style: inherit;">
+                <div class="col-md-2"></div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Hot Sales
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Guitar
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Piano
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Organ
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Violin
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                       Ukulele
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Trống
+                    </a>
+                </div>
+                <div class="col-md-1 col-3" >
+                    <a style="text-decoration: none;" href="" >
+                        Khác
+                    </a>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" id="chinhsach">
+            <div class="col-1 col-sm-1 col-md-2"></div>
+            <div class="col-10 col-sm-10 col-md-8 " style="padding-top: 50px;padding-bottom: 20px; text-align: left;">
+            <form action="/action_page.php" class="was-validated">
+                <div class="mb-3 mt-3">
+                  <label for="uname" class="form-label">Username:</label>
+                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="pwd" placeholder="Enter email" name="pswd" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">City:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Enter City" name="city" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                  <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Check this checkbox to continue.</div>
+                </div>
+                <textarea name="" id="" cols="100" rows="10"></textarea> <br>
+                <div style="width: 100%; text-align: center;">
+                    <button  type="submit" class="btn btn-outline-secondary">Submit</button>
+                    <button  type="submit" class="btn btn-outline-danger" ><a id="exit" href="../html/index.html">Exit</a></button>
+                </div>
+              </form>
+        </div>
+        
+        <div class="col-12 col-sm-1 col-md-2 "></div>
+        </div>
+        <footer  class="text-light text-center p-1" >
+                  <p> <a href="../html/index.html" class="text-warning">MUSIC SHOP</a> - All rights reserved © 2021 - Designed by <a href="https://www.linkedin.com/in/quang-tr%E1%BA%A7n-85a4382bb/" class="text-info">us</a></p>
+        </footer> 
+        </div>
+          
+        </body>
+        </html>
+        

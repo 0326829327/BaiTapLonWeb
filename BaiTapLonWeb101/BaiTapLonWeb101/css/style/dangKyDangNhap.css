@@ -1,0 +1,77 @@
+.khungDKDN{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.khungDKDN .title{
+    font-size: 28px;
+    font-weight: bold;
+    color: peru;
+}
+.box-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input_main {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.input_main:focus {
+    /* border-bottom: 1px solid #d70018; Màu cho border-bottom khi input được focus */
+}
+
+.input_main:focus + .input_label,
+.input_main:not(:placeholder-shown) + .input_label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #d70018; /* Màu cho label khi input được focus */
+    opacity: 1;
+    visibility: visible;
+}
+
+.input_label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    opacity: 0; /* Ban đầu label ẩn */
+    visibility: hidden; /* Làm cho label không hiển thị */
+}
+
+.box-input_inline {
+    position: absolute;
+    bottom: 0px; /* Điều chỉnh này để đường viền phù hợp với vị trí của bạn */
+    height: 2px;
+    width: 0;
+    background-color: #d70018;
+    transition: width 0.4s;
+}
+
+.input_main:focus ~ .box-input_inline {
+    width: 100%; /* Khi input được focus, đường viền sẽ chạy từ trái sang phải */
+}
+
+.forget-pass:hover {
+    color: blue;
+}
+.error-msg {
+    display: none;
+    color: red;
+  }
+  
+  /* Hiển thị thông báo lỗi khi checkbox không được chọn */
+  input[type="checkbox"]:not(:checked) + label + .error-msg {
+    display: block;
+    font-size: 12px;
+  }
+
+
+
